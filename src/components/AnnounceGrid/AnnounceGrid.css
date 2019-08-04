@@ -1,0 +1,25 @@
+.announce-grid {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  padding: 15px;
+}
+
+@media(max-width: 1024px) {
+  .announce-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .announce-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 640px) {
+  .announce-grid {
+    grid-template-columns: 1fr;
+  }
+}

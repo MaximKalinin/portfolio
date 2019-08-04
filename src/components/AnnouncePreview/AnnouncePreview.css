@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+.announce-preview {
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 20px;
+}
+
+.announce-preview__image {
+  overflow: hidden;
+  padding-bottom: 150%;
+  width: 100%;
+  height: 0;
+  position: relative;
+}
+
+.announce-preview__image > div {
+  width: 100%;
+  height: 100%;
+  transform: none;
+  transition: transform 0.3s;
+  position: absolute;
+}
+
+.announce-preview__description > .date {
+  padding-top: 10px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.announce-preview__description > .title {
+  font-size: 1.5rem;
+  font-family: 'Merriweather', serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: inline;
+  padding-top: 10px;
+}
+
+.announce-preview__description > .likes-wrapper {
+  display: inline;
+}
+
+.announce-preview__description > .likes-wrapper > .likes {
+  display: flex;
+  padding-top: 15px;
+}
+
+.announce-preview__description > .likes-wrapper > .likes > svg {
+  height: 1rem;
+  padding-right: 5px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.announce-preview__description > .likes-wrapper > .likes:hover > svg {
+  color: rgba(0, 0, 0, 1);
+}
+
+.announce-preview:hover > .announce-preview__image > div {
+  transform: scale(1.2);
+}
+
+.announce-preview:hover > .announce-preview__description > .title {
+  color: #ff5600;
+  border-bottom: 1px solid rgba(255, 56, 0, 0.3);
+}
